@@ -60,6 +60,7 @@ def multi_thread(queries):
 #             # ,queries.join('lineitem1000_b', 'lineitem1000_a')
 #         ]
 
+
 queries = [ queries.join('lineitem100_a', 'lineitem100_b')
             ,queries.join('lineitem100_b', 'lineitem100_a')
             ,queries.join('lineitem100_a', 'lineitem100_b')
@@ -82,4 +83,6 @@ queries = [ queries.join('lineitem100_a', 'lineitem100_b')
             ,queries.join('lineitem100_b', 'lineitem100_a')
         ]
 
+
 multi_thread(queries)
+
