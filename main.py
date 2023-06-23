@@ -43,13 +43,13 @@ def multi_thread(queries):
 # execute_query(queries.join('lineitem10_b', 'lineitem10_a'))
 
 
-list_queries = [ 
-     queries.join('lineitem100_a', 'lineitem100_b')
+list_queries = [
+     [queries.join('lineitem100_a', 'lineitem100_b')
     ,queries.join('lineitem100_b', 'lineitem100_a')
+    ,queries.join('lineitem100_a', 'lineitem100_b')]
+    ,[queries.join('lineitem100_b', 'lineitem100_a')
     ,queries.join('lineitem100_a', 'lineitem100_b')
-    ,queries.join('lineitem100_b', 'lineitem100_a')
-    ,queries.join('lineitem100_a', 'lineitem100_b')
-    ,queries.join('lineitem100_b', 'lineitem100_a')
+    ,queries.join('lineitem100_b', 'lineitem100_a')]
     ,queries.join('lineitem100_a', 'lineitem100_b')
     ,queries.join('lineitem100_b', 'lineitem100_a')
     ,queries.join('lineitem100_a', 'lineitem100_b')
